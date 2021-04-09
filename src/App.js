@@ -15,7 +15,7 @@ export default function App() {
     if (sumOfAngles === 180) {
       console.log("Sum of angles is 180");
       setResult("Congratulations! It's a triangle.");
-    } else if (sumOfAngles != 180) {
+    } else if (sumOfAngles !== 180) {
       console.log(
         "Sum of angles is " + sumOfAngles + " and it's not a triangle."
       );
@@ -96,7 +96,7 @@ export default function App() {
               angle1 + angle2 + parseInt(event.target.value);
             if (totalOfangles === 180) {
               setAngle3Result("Correct! It's a triangle.");
-            } else if (totalOfangles != 180) {
+            } else if (totalOfangles !== 180) {
               setAngle3Result("No it's not correct.");
             }
           }}
